@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_588c570819bb8e623be3ca8fa097dc28 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_588c570819bb8e623be3ca8fa097dc28" ></div>
+        
+</body>
+<script>    
+    
+            var map_588c570819bb8e623be3ca8fa097dc28 = L.map(
+                "map_588c570819bb8e623be3ca8fa097dc28",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_05b3b019c28c3489428d80e9b8e1cc3c = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_588c570819bb8e623be3ca8fa097dc28);
+        
+    
+            var marker_cluster_40719e5fd86c88f2091f91c523c29a5d = L.markerClusterGroup(
+                {}
+            );
+            map_588c570819bb8e623be3ca8fa097dc28.addLayer(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+            var circle_marker_0f3b4dfb1082d1bf12dd1f61f7c23a27 = L.circleMarker(
+                [51.165691, 10.451526],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_5fd6948bdf080a07e5c9f215d6c093f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6542a334ed4de4e198bdd2be16d2d36 = $(`<div id="html_c6542a334ed4de4e198bdd2be16d2d36" style="width: 100.0%; height: 100.0%;">Country : Germany<br><br>                     Nettowert : 10128266.86 EUR<br></div>`)[0];
+            popup_5fd6948bdf080a07e5c9f215d6c093f9.setContent(html_c6542a334ed4de4e198bdd2be16d2d36);
+        
+
+        circle_marker_0f3b4dfb1082d1bf12dd1f61f7c23a27.bindPopup(popup_5fd6948bdf080a07e5c9f215d6c093f9)
+        ;
+
+        
+    
+    
+            var circle_marker_705288c2783bbe51e73ff9b62e90b3d0 = L.circleMarker(
+                [47.516231, 14.550072],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_866349e4b51ae3eda2f0b82cd061836d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_371e69b481873f11356d48b3a4b4a8eb = $(`<div id="html_371e69b481873f11356d48b3a4b4a8eb" style="width: 100.0%; height: 100.0%;">Country : Austria<br><br>                     Nettowert : 8661405.76 EUR<br></div>`)[0];
+            popup_866349e4b51ae3eda2f0b82cd061836d.setContent(html_371e69b481873f11356d48b3a4b4a8eb);
+        
+
+        circle_marker_705288c2783bbe51e73ff9b62e90b3d0.bindPopup(popup_866349e4b51ae3eda2f0b82cd061836d)
+        ;
+
+        
+    
+    
+            var circle_marker_84a0cf12517f5b483ed573f76e0a6013 = L.circleMarker(
+                [55.378051, -3.435973],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_339adb709c1d6d7e16286a7866ed552f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6de3364c6041f3227b1207058e191bf3 = $(`<div id="html_6de3364c6041f3227b1207058e191bf3" style="width: 100.0%; height: 100.0%;">Country : United Kingdom<br><br>                     Nettowert : 6314180.26 EUR<br></div>`)[0];
+            popup_339adb709c1d6d7e16286a7866ed552f.setContent(html_6de3364c6041f3227b1207058e191bf3);
+        
+
+        circle_marker_84a0cf12517f5b483ed573f76e0a6013.bindPopup(popup_339adb709c1d6d7e16286a7866ed552f)
+        ;
+
+        
+    
+    
+            var circle_marker_a89e8123ad2fa68da1a2d2e4a504eac4 = L.circleMarker(
+                [51.919438, 19.145136],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_c4c7ee31164bc3268c264c91b4341c17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca43899077bcd0e513f0cd99ce034f87 = $(`<div id="html_ca43899077bcd0e513f0cd99ce034f87" style="width: 100.0%; height: 100.0%;">Country : Poland<br><br>                     Nettowert : 3443806.24 EUR<br></div>`)[0];
+            popup_c4c7ee31164bc3268c264c91b4341c17.setContent(html_ca43899077bcd0e513f0cd99ce034f87);
+        
+
+        circle_marker_a89e8123ad2fa68da1a2d2e4a504eac4.bindPopup(popup_c4c7ee31164bc3268c264c91b4341c17)
+        ;
+
+        
+    
+    
+            var circle_marker_135abb8d9d7329e4e824a30c84fabd0f = L.circleMarker(
+                [37.09024, -95.712891],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_a3d4c6b93c169c5156e8448b1ba20a00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6c2a792bf07a261ef6f829942d50babb = $(`<div id="html_6c2a792bf07a261ef6f829942d50babb" style="width: 100.0%; height: 100.0%;">Country : United States of America<br><br>                     Nettowert : 2402759.18 EUR<br></div>`)[0];
+            popup_a3d4c6b93c169c5156e8448b1ba20a00.setContent(html_6c2a792bf07a261ef6f829942d50babb);
+        
+
+        circle_marker_135abb8d9d7329e4e824a30c84fabd0f.bindPopup(popup_a3d4c6b93c169c5156e8448b1ba20a00)
+        ;
+
+        
+    
+    
+            var circle_marker_7751b0fc0bd114faa61ffb8fc44fa046 = L.circleMarker(
+                [52.132633, 5.291266],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_7906275a7d52459b333eb39f0d8ef815 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40bed6756fdad29b26dce68429e4a213 = $(`<div id="html_40bed6756fdad29b26dce68429e4a213" style="width: 100.0%; height: 100.0%;">Country : Netherlands<br><br>                     Nettowert : 2353122.93 EUR<br></div>`)[0];
+            popup_7906275a7d52459b333eb39f0d8ef815.setContent(html_40bed6756fdad29b26dce68429e4a213);
+        
+
+        circle_marker_7751b0fc0bd114faa61ffb8fc44fa046.bindPopup(popup_7906275a7d52459b333eb39f0d8ef815)
+        ;
+
+        
+    
+    
+            var circle_marker_f25e1fcf4dbd096a4ab254174cf4ed12 = L.circleMarker(
+                [46.818188, 8.227512],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_0d7a497cfd980d62b7550051ac09ea7e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1885e5a4a2c4266a6e2a10c9ebf645eb = $(`<div id="html_1885e5a4a2c4266a6e2a10c9ebf645eb" style="width: 100.0%; height: 100.0%;">Country : Switzerland<br><br>                     Nettowert : 1349649.84 EUR<br></div>`)[0];
+            popup_0d7a497cfd980d62b7550051ac09ea7e.setContent(html_1885e5a4a2c4266a6e2a10c9ebf645eb);
+        
+
+        circle_marker_f25e1fcf4dbd096a4ab254174cf4ed12.bindPopup(popup_0d7a497cfd980d62b7550051ac09ea7e)
+        ;
+
+        
+    
+    
+            var circle_marker_5c86924bf681683bca9d942a65f6801e = L.circleMarker(
+                [41.87194, 12.56738],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_f612c0923503327be4555b638092827d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f6f93a627e8124c87ef5c9651fdd675 = $(`<div id="html_2f6f93a627e8124c87ef5c9651fdd675" style="width: 100.0%; height: 100.0%;">Country : Italy<br><br>                     Nettowert : 1050837.66 EUR<br></div>`)[0];
+            popup_f612c0923503327be4555b638092827d.setContent(html_2f6f93a627e8124c87ef5c9651fdd675);
+        
+
+        circle_marker_5c86924bf681683bca9d942a65f6801e.bindPopup(popup_f612c0923503327be4555b638092827d)
+        ;
+
+        
+    
+    
+            var circle_marker_82d18f40b2e5a5b09594f66bb4189bf7 = L.circleMarker(
+                [40.463667, -3.74922],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_0cdaf3ce3325851c3168de901f3092d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a68c997158a7d470f5509d0727f3316 = $(`<div id="html_4a68c997158a7d470f5509d0727f3316" style="width: 100.0%; height: 100.0%;">Country : Spain<br><br>                     Nettowert : 902618.2 EUR<br></div>`)[0];
+            popup_0cdaf3ce3325851c3168de901f3092d3.setContent(html_4a68c997158a7d470f5509d0727f3316);
+        
+
+        circle_marker_82d18f40b2e5a5b09594f66bb4189bf7.bindPopup(popup_0cdaf3ce3325851c3168de901f3092d3)
+        ;
+
+        
+    
+    
+            var circle_marker_8c2e5faecfdf1591bce5c99ebb6d38cf = L.circleMarker(
+                [56.130366, -106.346771],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_11e21cb2fbb60613808eb0d1525d8466 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b902b8e68951c9023707384ffaca6336 = $(`<div id="html_b902b8e68951c9023707384ffaca6336" style="width: 100.0%; height: 100.0%;">Country : Canada<br><br>                     Nettowert : 741141.11 EUR<br></div>`)[0];
+            popup_11e21cb2fbb60613808eb0d1525d8466.setContent(html_b902b8e68951c9023707384ffaca6336);
+        
+
+        circle_marker_8c2e5faecfdf1591bce5c99ebb6d38cf.bindPopup(popup_11e21cb2fbb60613808eb0d1525d8466)
+        ;
+
+        
+    
+    
+            var circle_marker_5a8815a591e96ce9efd872e94d983068 = L.circleMarker(
+                [31.046051, 34.851612],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_7f6b6fd8655041ea5f13f72064e8ec60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46fe17f2c86ea031325ba607b9da8833 = $(`<div id="html_46fe17f2c86ea031325ba607b9da8833" style="width: 100.0%; height: 100.0%;">Country : Israel<br><br>                     Nettowert : 711097.22 EUR<br></div>`)[0];
+            popup_7f6b6fd8655041ea5f13f72064e8ec60.setContent(html_46fe17f2c86ea031325ba607b9da8833);
+        
+
+        circle_marker_5a8815a591e96ce9efd872e94d983068.bindPopup(popup_7f6b6fd8655041ea5f13f72064e8ec60)
+        ;
+
+        
+    
+    
+            var circle_marker_3db54db14c43dd24144f9dcd582f8e52 = L.circleMarker(
+                [49.817492, 15.472962],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_15a203349de656ffbdfc67721edc0dcc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65ac6547c1ff596e268e13afd88d8a5f = $(`<div id="html_65ac6547c1ff596e268e13afd88d8a5f" style="width: 100.0%; height: 100.0%;">Country : Czechia<br><br>                     Nettowert : 668385.81 EUR<br></div>`)[0];
+            popup_15a203349de656ffbdfc67721edc0dcc.setContent(html_65ac6547c1ff596e268e13afd88d8a5f);
+        
+
+        circle_marker_3db54db14c43dd24144f9dcd582f8e52.bindPopup(popup_15a203349de656ffbdfc67721edc0dcc)
+        ;
+
+        
+    
+    
+            var circle_marker_238889f9462a93b92f2951a90304c0ab = L.circleMarker(
+                [50.503887, 4.469936],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_e17e268a18fbeb92cb9a5d39157275eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13e740cb5472c45af536345dcfbce952 = $(`<div id="html_13e740cb5472c45af536345dcfbce952" style="width: 100.0%; height: 100.0%;">Country : Belgium<br><br>                     Nettowert : 603348.22 EUR<br></div>`)[0];
+            popup_e17e268a18fbeb92cb9a5d39157275eb.setContent(html_13e740cb5472c45af536345dcfbce952);
+        
+
+        circle_marker_238889f9462a93b92f2951a90304c0ab.bindPopup(popup_e17e268a18fbeb92cb9a5d39157275eb)
+        ;
+
+        
+    
+    
+            var circle_marker_53511b5cf012336e672421250a1f4a9b = L.circleMarker(
+                [-35.675147, -71.542969],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_17fd84989f773584c001525e297b450b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75ee26a52f835e51d71e8db008e9ee3c = $(`<div id="html_75ee26a52f835e51d71e8db008e9ee3c" style="width: 100.0%; height: 100.0%;">Country : Chile<br><br>                     Nettowert : 464506.3 EUR<br></div>`)[0];
+            popup_17fd84989f773584c001525e297b450b.setContent(html_75ee26a52f835e51d71e8db008e9ee3c);
+        
+
+        circle_marker_53511b5cf012336e672421250a1f4a9b.bindPopup(popup_17fd84989f773584c001525e297b450b)
+        ;
+
+        
+    
+    
+            var circle_marker_11ae1c99b5444b385c217657479188df = L.circleMarker(
+                [61.52401, 105.318756],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_ab4e8bc7a1935190ca96b3773abb0907 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad3a71f7daccabe7c463b3c9194d1b0d = $(`<div id="html_ad3a71f7daccabe7c463b3c9194d1b0d" style="width: 100.0%; height: 100.0%;">Country : Russia<br><br>                     Nettowert : 462245.28 EUR<br></div>`)[0];
+            popup_ab4e8bc7a1935190ca96b3773abb0907.setContent(html_ad3a71f7daccabe7c463b3c9194d1b0d);
+        
+
+        circle_marker_11ae1c99b5444b385c217657479188df.bindPopup(popup_ab4e8bc7a1935190ca96b3773abb0907)
+        ;
+
+        
+    
+    
+            var circle_marker_402c14d481b353302d9a9cefeb33579f = L.circleMarker(
+                [-30.559482, 22.937506],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_892adb721cea48631aac3cec7d590bbe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3d8c012487efaecb2c5c13ac6a2089b = $(`<div id="html_b3d8c012487efaecb2c5c13ac6a2089b" style="width: 100.0%; height: 100.0%;">Country : South Africa<br><br>                     Nettowert : 444230.32 EUR<br></div>`)[0];
+            popup_892adb721cea48631aac3cec7d590bbe.setContent(html_b3d8c012487efaecb2c5c13ac6a2089b);
+        
+
+        circle_marker_402c14d481b353302d9a9cefeb33579f.bindPopup(popup_892adb721cea48631aac3cec7d590bbe)
+        ;
+
+        
+    
+    
+            var circle_marker_572a361e5fa4df0ad482873f25962f43 = L.circleMarker(
+                [61.892635, -6.911806],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_997e11e4e9d74265ffcb907da980f920 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_618867cf2f9745d2f7e3f18885bb6a3a = $(`<div id="html_618867cf2f9745d2f7e3f18885bb6a3a" style="width: 100.0%; height: 100.0%;">Country : Finland<br><br>                     Nettowert : 404193.21 EUR<br></div>`)[0];
+            popup_997e11e4e9d74265ffcb907da980f920.setContent(html_618867cf2f9745d2f7e3f18885bb6a3a);
+        
+
+        circle_marker_572a361e5fa4df0ad482873f25962f43.bindPopup(popup_997e11e4e9d74265ffcb907da980f920)
+        ;
+
+        
+    
+    
+            var circle_marker_6e0aa484b6c7e5e5f9491ecea65fd9d5 = L.circleMarker(
+                [-25.274398, 133.775136],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_c7ce080dd23f52c68f7d16a7836e17f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ce963a4764b1cf307d93e393fd2e058 = $(`<div id="html_2ce963a4764b1cf307d93e393fd2e058" style="width: 100.0%; height: 100.0%;">Country : Australia<br><br>                     Nettowert : 371568.1 EUR<br></div>`)[0];
+            popup_c7ce080dd23f52c68f7d16a7836e17f4.setContent(html_2ce963a4764b1cf307d93e393fd2e058);
+        
+
+        circle_marker_6e0aa484b6c7e5e5f9491ecea65fd9d5.bindPopup(popup_c7ce080dd23f52c68f7d16a7836e17f4)
+        ;
+
+        
+    
+    
+            var circle_marker_7bf35e08840a234585f21c4ef0e735a4 = L.circleMarker(
+                [46.151241, 14.995463],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_e98e45b53f8e7ae77cd8d282d9506d10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd44815a58ff91fe36b0f948be46687a = $(`<div id="html_cd44815a58ff91fe36b0f948be46687a" style="width: 100.0%; height: 100.0%;">Country : Slovenia<br><br>                     Nettowert : 371262.35 EUR<br></div>`)[0];
+            popup_e98e45b53f8e7ae77cd8d282d9506d10.setContent(html_cd44815a58ff91fe36b0f948be46687a);
+        
+
+        circle_marker_7bf35e08840a234585f21c4ef0e735a4.bindPopup(popup_e98e45b53f8e7ae77cd8d282d9506d10)
+        ;
+
+        
+    
+    
+            var circle_marker_1afcea292421785841632b9f3f622ff4 = L.circleMarker(
+                [60.128161, 18.643501],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_a9b1c0ccf9bf760045593964d44dfc52 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_994e7d779eefea2bd3b8f3bb90840534 = $(`<div id="html_994e7d779eefea2bd3b8f3bb90840534" style="width: 100.0%; height: 100.0%;">Country : Sweden<br><br>                     Nettowert : 333739.02 EUR<br></div>`)[0];
+            popup_a9b1c0ccf9bf760045593964d44dfc52.setContent(html_994e7d779eefea2bd3b8f3bb90840534);
+        
+
+        circle_marker_1afcea292421785841632b9f3f622ff4.bindPopup(popup_a9b1c0ccf9bf760045593964d44dfc52)
+        ;
+
+        
+    
+    
+            var circle_marker_b2c1ee6fb6981010963b676ab6fc2fe3 = L.circleMarker(
+                [48.669026, 19.699024],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_f7afa37c06dfc81bfb2f4f62a3ebde45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_231437fffca01142e6674361923b2675 = $(`<div id="html_231437fffca01142e6674361923b2675" style="width: 100.0%; height: 100.0%;">Country : Slovakia<br><br>                     Nettowert : 269624.44 EUR<br></div>`)[0];
+            popup_f7afa37c06dfc81bfb2f4f62a3ebde45.setContent(html_231437fffca01142e6674361923b2675);
+        
+
+        circle_marker_b2c1ee6fb6981010963b676ab6fc2fe3.bindPopup(popup_f7afa37c06dfc81bfb2f4f62a3ebde45)
+        ;
+
+        
+    
+    
+            var circle_marker_33a1d8794371142088235d9915e40aac = L.circleMarker(
+                [23.424076, 53.847818],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_f84c22ff8705dfa20b3c480a6c5ff60f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7c2941844a570efa2da70ec45b10178 = $(`<div id="html_f7c2941844a570efa2da70ec45b10178" style="width: 100.0%; height: 100.0%;">Country : United Arab Emirates<br><br>                     Nettowert : 229409.09 EUR<br></div>`)[0];
+            popup_f84c22ff8705dfa20b3c480a6c5ff60f.setContent(html_f7c2941844a570efa2da70ec45b10178);
+        
+
+        circle_marker_33a1d8794371142088235d9915e40aac.bindPopup(popup_f84c22ff8705dfa20b3c480a6c5ff60f)
+        ;
+
+        
+    
+    
+            var circle_marker_febc293213f163a866f11a10ca6ada46 = L.circleMarker(
+                [56.26392, 9.501785],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_3e4522eef6acf9955f45a2a42ab3c634 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac9bec36fe4a55c936f715b10cbf90c3 = $(`<div id="html_ac9bec36fe4a55c936f715b10cbf90c3" style="width: 100.0%; height: 100.0%;">Country : Denmark<br><br>                     Nettowert : 206354.25 EUR<br></div>`)[0];
+            popup_3e4522eef6acf9955f45a2a42ab3c634.setContent(html_ac9bec36fe4a55c936f715b10cbf90c3);
+        
+
+        circle_marker_febc293213f163a866f11a10ca6ada46.bindPopup(popup_3e4522eef6acf9955f45a2a42ab3c634)
+        ;
+
+        
+    
+    
+            var circle_marker_0c6cdc04145711d3994abc5ecad68e13 = L.circleMarker(
+                [-0.228021, 15.827659],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_6d877a262ec83587adbfef3c04a54bd5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3cefae140ce8c0fa4d4df68be55ccca7 = $(`<div id="html_3cefae140ce8c0fa4d4df68be55ccca7" style="width: 100.0%; height: 100.0%;">Country : Dem. Rep. Congo<br><br>                     Nettowert : 173418.72 EUR<br></div>`)[0];
+            popup_6d877a262ec83587adbfef3c04a54bd5.setContent(html_3cefae140ce8c0fa4d4df68be55ccca7);
+        
+
+        circle_marker_0c6cdc04145711d3994abc5ecad68e13.bindPopup(popup_6d877a262ec83587adbfef3c04a54bd5)
+        ;
+
+        
+    
+    
+            var circle_marker_25dc09548870b8a5e703f6d4c78d2743 = L.circleMarker(
+                [39.399872, -8.224454],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_a43ceb5b4f12384011e61b8677aca98d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0bf972044ab4e59b435fa35afe7015f1 = $(`<div id="html_0bf972044ab4e59b435fa35afe7015f1" style="width: 100.0%; height: 100.0%;">Country : Portugal<br><br>                     Nettowert : 170979.89 EUR<br></div>`)[0];
+            popup_a43ceb5b4f12384011e61b8677aca98d.setContent(html_0bf972044ab4e59b435fa35afe7015f1);
+        
+
+        circle_marker_25dc09548870b8a5e703f6d4c78d2743.bindPopup(popup_a43ceb5b4f12384011e61b8677aca98d)
+        ;
+
+        
+    
+    
+            var circle_marker_f57fda21e33f6efa0cf2c5c5c7475295 = L.circleMarker(
+                [23.634501, -102.552784],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_3359acaf162dae0cef240450740601f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88ddb6ec760419e3b38d8dc92002d319 = $(`<div id="html_88ddb6ec760419e3b38d8dc92002d319" style="width: 100.0%; height: 100.0%;">Country : Mexico<br><br>                     Nettowert : 163823.91 EUR<br></div>`)[0];
+            popup_3359acaf162dae0cef240450740601f8.setContent(html_88ddb6ec760419e3b38d8dc92002d319);
+        
+
+        circle_marker_f57fda21e33f6efa0cf2c5c5c7475295.bindPopup(popup_3359acaf162dae0cef240450740601f8)
+        ;
+
+        
+    
+    
+            var circle_marker_e08b92c2393a6389a577ad0fbf4d3af0 = L.circleMarker(
+                [18.735693, -70.162651],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_70010170d010fbe6a0fe5e64cf26d696 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0af19fd79060734cd7fdf26719749fcf = $(`<div id="html_0af19fd79060734cd7fdf26719749fcf" style="width: 100.0%; height: 100.0%;">Country : Dominican Rep.<br><br>                     Nettowert : 155637.1 EUR<br></div>`)[0];
+            popup_70010170d010fbe6a0fe5e64cf26d696.setContent(html_0af19fd79060734cd7fdf26719749fcf);
+        
+
+        circle_marker_e08b92c2393a6389a577ad0fbf4d3af0.bindPopup(popup_70010170d010fbe6a0fe5e64cf26d696)
+        ;
+
+        
+    
+    
+            var circle_marker_62b7a70e7f9710b8bcba406de00721bc = L.circleMarker(
+                [45.1, 15.2],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_b2ebd9f8d7044dd3703cbcf8fc8c13c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab32a7494d6587503149c3ab3ef0c366 = $(`<div id="html_ab32a7494d6587503149c3ab3ef0c366" style="width: 100.0%; height: 100.0%;">Country : Croatia<br><br>                     Nettowert : 148181.68 EUR<br></div>`)[0];
+            popup_b2ebd9f8d7044dd3703cbcf8fc8c13c6.setContent(html_ab32a7494d6587503149c3ab3ef0c366);
+        
+
+        circle_marker_62b7a70e7f9710b8bcba406de00721bc.bindPopup(popup_b2ebd9f8d7044dd3703cbcf8fc8c13c6)
+        ;
+
+        
+    
+    
+            var circle_marker_c01117464a023f53d16f147b7910bd3e = L.circleMarker(
+                [45.943161, 24.96676],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_034b62f0a8d135b20bdc3720dd20ad65 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ad7ab27c665a0d41a5b7b2928cab76b = $(`<div id="html_8ad7ab27c665a0d41a5b7b2928cab76b" style="width: 100.0%; height: 100.0%;">Country : Romania<br><br>                     Nettowert : 147424.83 EUR<br></div>`)[0];
+            popup_034b62f0a8d135b20bdc3720dd20ad65.setContent(html_8ad7ab27c665a0d41a5b7b2928cab76b);
+        
+
+        circle_marker_c01117464a023f53d16f147b7910bd3e.bindPopup(popup_034b62f0a8d135b20bdc3720dd20ad65)
+        ;
+
+        
+    
+    
+            var circle_marker_53c20e4e02e37c57bad0b86e70cefb18 = L.circleMarker(
+                [-9.189967, -75.015152],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_e00b9ad18c23870b2fa6fddb1395d1ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7b3539b8ae95c301015baad02be13a5 = $(`<div id="html_b7b3539b8ae95c301015baad02be13a5" style="width: 100.0%; height: 100.0%;">Country : Peru<br><br>                     Nettowert : 135753.47 EUR<br></div>`)[0];
+            popup_e00b9ad18c23870b2fa6fddb1395d1ef.setContent(html_b7b3539b8ae95c301015baad02be13a5);
+        
+
+        circle_marker_53c20e4e02e37c57bad0b86e70cefb18.bindPopup(popup_e00b9ad18c23870b2fa6fddb1395d1ef)
+        ;
+
+        
+    
+    
+            var circle_marker_8a6702785e7b98a55ac4ce58d6063d97 = L.circleMarker(
+                [3.919305, -56.027783],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_434eb1b4599cd6dd147e7edbed9252a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df0e19ba4cf9f37c63166b9b340c6ddd = $(`<div id="html_df0e19ba4cf9f37c63166b9b340c6ddd" style="width: 100.0%; height: 100.0%;">Country : Suriname<br><br>                     Nettowert : 113995.78 EUR<br></div>`)[0];
+            popup_434eb1b4599cd6dd147e7edbed9252a6.setContent(html_df0e19ba4cf9f37c63166b9b340c6ddd);
+        
+
+        circle_marker_8a6702785e7b98a55ac4ce58d6063d97.bindPopup(popup_434eb1b4599cd6dd147e7edbed9252a6)
+        ;
+
+        
+    
+    
+            var circle_marker_e71658a0b6059e55072be984855ace72 = L.circleMarker(
+                [4.210484, 101.975766],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_37ed5aa6b334f47eaa52608f557d42df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65295804cabde9be015a1869516c1204 = $(`<div id="html_65295804cabde9be015a1869516c1204" style="width: 100.0%; height: 100.0%;">Country : Malaysia<br><br>                     Nettowert : 113546.77 EUR<br></div>`)[0];
+            popup_37ed5aa6b334f47eaa52608f557d42df.setContent(html_65295804cabde9be015a1869516c1204);
+        
+
+        circle_marker_e71658a0b6059e55072be984855ace72.bindPopup(popup_37ed5aa6b334f47eaa52608f557d42df)
+        ;
+
+        
+    
+    
+            var circle_marker_0f430a73197f4a9a4aa0025e1d65fd10 = L.circleMarker(
+                [53.41291, -8.24389],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_a5184cdf92f4e264b2a488c4579b2f94 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00778faac61dc4af491ff5c7fd18f236 = $(`<div id="html_00778faac61dc4af491ff5c7fd18f236" style="width: 100.0%; height: 100.0%;">Country : Ireland<br><br>                     Nettowert : 100140.81 EUR<br></div>`)[0];
+            popup_a5184cdf92f4e264b2a488c4579b2f94.setContent(html_00778faac61dc4af491ff5c7fd18f236);
+        
+
+        circle_marker_0f430a73197f4a9a4aa0025e1d65fd10.bindPopup(popup_a5184cdf92f4e264b2a488c4579b2f94)
+        ;
+
+        
+    
+    
+            var circle_marker_ec6970cbe7e4e0365093965dc5ac01ec = L.circleMarker(
+                [39.074208, 21.824312],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_230d49e6d9db93abde36a7fe2457651a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9fb78b9d51384f2bd3c600dd10f60e65 = $(`<div id="html_9fb78b9d51384f2bd3c600dd10f60e65" style="width: 100.0%; height: 100.0%;">Country : Greece<br><br>                     Nettowert : 99870.92 EUR<br></div>`)[0];
+            popup_230d49e6d9db93abde36a7fe2457651a.setContent(html_9fb78b9d51384f2bd3c600dd10f60e65);
+        
+
+        circle_marker_ec6970cbe7e4e0365093965dc5ac01ec.bindPopup(popup_230d49e6d9db93abde36a7fe2457651a)
+        ;
+
+        
+    
+    
+            var circle_marker_65ed425675210af8588d6e350abf8809 = L.circleMarker(
+                [55.169438, 23.881275],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_58c897087d6e622113522826736342ae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4eab3069f325d82a992f064d0d455765 = $(`<div id="html_4eab3069f325d82a992f064d0d455765" style="width: 100.0%; height: 100.0%;">Country : Lithuania<br><br>                     Nettowert : 95481.87 EUR<br></div>`)[0];
+            popup_58c897087d6e622113522826736342ae.setContent(html_4eab3069f325d82a992f064d0d455765);
+        
+
+        circle_marker_65ed425675210af8588d6e350abf8809.bindPopup(popup_58c897087d6e622113522826736342ae)
+        ;
+
+        
+    
+    
+            var circle_marker_56e83819ac4473db1a370b0b6f1df04f = L.circleMarker(
+                [35.86166, 104.195397],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_876d4c96b23e527c66e64369bbf7c589 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84520e01aed83da32f2b53acaebd89e3 = $(`<div id="html_84520e01aed83da32f2b53acaebd89e3" style="width: 100.0%; height: 100.0%;">Country : China<br><br>                     Nettowert : 91153.07 EUR<br></div>`)[0];
+            popup_876d4c96b23e527c66e64369bbf7c589.setContent(html_84520e01aed83da32f2b53acaebd89e3);
+        
+
+        circle_marker_56e83819ac4473db1a370b0b6f1df04f.bindPopup(popup_876d4c96b23e527c66e64369bbf7c589)
+        ;
+
+        
+    
+    
+            var circle_marker_f7066882278da3108ec2ccb0a8bb31db = L.circleMarker(
+                [38.963745, 35.243322],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_6b4ae3b86c1a83da4843b2c3c2a0ff55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_451c280c48d6f6b2e9c40287df6a5b7e = $(`<div id="html_451c280c48d6f6b2e9c40287df6a5b7e" style="width: 100.0%; height: 100.0%;">Country : Turkey<br><br>                     Nettowert : 89875.2 EUR<br></div>`)[0];
+            popup_6b4ae3b86c1a83da4843b2c3c2a0ff55.setContent(html_451c280c48d6f6b2e9c40287df6a5b7e);
+        
+
+        circle_marker_f7066882278da3108ec2ccb0a8bb31db.bindPopup(popup_6b4ae3b86c1a83da4843b2c3c2a0ff55)
+        ;
+
+        
+    
+    
+            var circle_marker_cdf8a4df655af923513986a6f065a73d = L.circleMarker(
+                [15.783471, -90.230759],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_64e4f47f0917d644a07a9214256a752e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e0dc7c88c6eebf847f882e5e340dd74c = $(`<div id="html_e0dc7c88c6eebf847f882e5e340dd74c" style="width: 100.0%; height: 100.0%;">Country : Guatemala<br><br>                     Nettowert : 82434.34 EUR<br></div>`)[0];
+            popup_64e4f47f0917d644a07a9214256a752e.setContent(html_e0dc7c88c6eebf847f882e5e340dd74c);
+        
+
+        circle_marker_cdf8a4df655af923513986a6f065a73d.bindPopup(popup_64e4f47f0917d644a07a9214256a752e)
+        ;
+
+        
+    
+    
+            var circle_marker_9ab9d453c24614804670b563ae50f7d1 = L.circleMarker(
+                [15.870032, 100.992541],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_eef1823687b68f5c0b8b417ec911c7f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bede9d7ad270aa5510104b49ac24c2f1 = $(`<div id="html_bede9d7ad270aa5510104b49ac24c2f1" style="width: 100.0%; height: 100.0%;">Country : Thailand<br><br>                     Nettowert : 76477.19 EUR<br></div>`)[0];
+            popup_eef1823687b68f5c0b8b417ec911c7f1.setContent(html_bede9d7ad270aa5510104b49ac24c2f1);
+        
+
+        circle_marker_9ab9d453c24614804670b563ae50f7d1.bindPopup(popup_eef1823687b68f5c0b8b417ec911c7f1)
+        ;
+
+        
+    
+    
+            var circle_marker_41f6714eba16f5904f84501d0219a351 = L.circleMarker(
+                [47.162494, 19.503304],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_4a4843465052d51d31e5675ce6dd97b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2b921fb080eb1d13ce6a9c204fcab24e = $(`<div id="html_2b921fb080eb1d13ce6a9c204fcab24e" style="width: 100.0%; height: 100.0%;">Country : Hungary<br><br>                     Nettowert : 76130.54 EUR<br></div>`)[0];
+            popup_4a4843465052d51d31e5675ce6dd97b5.setContent(html_2b921fb080eb1d13ce6a9c204fcab24e);
+        
+
+        circle_marker_41f6714eba16f5904f84501d0219a351.bindPopup(popup_4a4843465052d51d31e5675ce6dd97b5)
+        ;
+
+        
+    
+    
+            var circle_marker_d679ba39c3741f081a0c0ed183b88b0d = L.circleMarker(
+                [42.733883, 25.48583],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_462908727840550bcd939a6eb1dbce22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9eee296d2135f4450b1ecc5d0ac1c31 = $(`<div id="html_d9eee296d2135f4450b1ecc5d0ac1c31" style="width: 100.0%; height: 100.0%;">Country : Bulgaria<br><br>                     Nettowert : 70575.99 EUR<br></div>`)[0];
+            popup_462908727840550bcd939a6eb1dbce22.setContent(html_d9eee296d2135f4450b1ecc5d0ac1c31);
+        
+
+        circle_marker_d679ba39c3741f081a0c0ed183b88b0d.bindPopup(popup_462908727840550bcd939a6eb1dbce22)
+        ;
+
+        
+    
+    
+            var circle_marker_47e198922e7b48fcc9ed4d76695531a5 = L.circleMarker(
+                [20.593684, 78.96288],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_d712fcf5954eae298b8657969d7109c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87ba9fbccea79fe28e46d634fbde9298 = $(`<div id="html_87ba9fbccea79fe28e46d634fbde9298" style="width: 100.0%; height: 100.0%;">Country : India<br><br>                     Nettowert : 70534.9 EUR<br></div>`)[0];
+            popup_d712fcf5954eae298b8657969d7109c7.setContent(html_87ba9fbccea79fe28e46d634fbde9298);
+        
+
+        circle_marker_47e198922e7b48fcc9ed4d76695531a5.bindPopup(popup_d712fcf5954eae298b8657969d7109c7)
+        ;
+
+        
+    
+    
+            var circle_marker_3136f703ce220581e5ec26b84337c89e = L.circleMarker(
+                [44.016521, 21.005859],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_15547664c6393e243e4b13f477525b75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b77f6ed60dc019101c80922c0c1f471e = $(`<div id="html_b77f6ed60dc019101c80922c0c1f471e" style="width: 100.0%; height: 100.0%;">Country : Serbia<br><br>                     Nettowert : 69307.76 EUR<br></div>`)[0];
+            popup_15547664c6393e243e4b13f477525b75.setContent(html_b77f6ed60dc019101c80922c0c1f471e);
+        
+
+        circle_marker_3136f703ce220581e5ec26b84337c89e.bindPopup(popup_15547664c6393e243e4b13f477525b75)
+        ;
+
+        
+    
+    
+            var circle_marker_839ca22759e88db9b750bce6bcb29d6e = L.circleMarker(
+                [23.885942, 45.079162],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_01c31e5d1c009b30d478d33a4983f50f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_21f99ef1ddf0d4e77db0227e8ea01b04 = $(`<div id="html_21f99ef1ddf0d4e77db0227e8ea01b04" style="width: 100.0%; height: 100.0%;">Country : Saudi Arabia<br><br>                     Nettowert : 68011.36 EUR<br></div>`)[0];
+            popup_01c31e5d1c009b30d478d33a4983f50f.setContent(html_21f99ef1ddf0d4e77db0227e8ea01b04);
+        
+
+        circle_marker_839ca22759e88db9b750bce6bcb29d6e.bindPopup(popup_01c31e5d1c009b30d478d33a4983f50f)
+        ;
+
+        
+    
+    
+            var circle_marker_ced11b5ab6fdc5631b7cec3336d2e0f0 = L.circleMarker(
+                [-40.900557, 174.885971],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_1b7037cfe2a4b8e5feffb9ba7f9f1440 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56b9ed31c98dcfe6a9675bf36b7d7f37 = $(`<div id="html_56b9ed31c98dcfe6a9675bf36b7d7f37" style="width: 100.0%; height: 100.0%;">Country : New Zealand<br><br>                     Nettowert : 65453.93 EUR<br></div>`)[0];
+            popup_1b7037cfe2a4b8e5feffb9ba7f9f1440.setContent(html_56b9ed31c98dcfe6a9675bf36b7d7f37);
+        
+
+        circle_marker_ced11b5ab6fdc5631b7cec3336d2e0f0.bindPopup(popup_1b7037cfe2a4b8e5feffb9ba7f9f1440)
+        ;
+
+        
+    
+    
+            var circle_marker_362dd97179ac478644604177d0bcbf9d = L.circleMarker(
+                [4.570868, -74.297333],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_18c19d6f7531f32d52da9d9d30ddde00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b97d30759f789f5e38f0b9a67d2da702 = $(`<div id="html_b97d30759f789f5e38f0b9a67d2da702" style="width: 100.0%; height: 100.0%;">Country : Colombia<br><br>                     Nettowert : 60693.44 EUR<br></div>`)[0];
+            popup_18c19d6f7531f32d52da9d9d30ddde00.setContent(html_b97d30759f789f5e38f0b9a67d2da702);
+        
+
+        circle_marker_362dd97179ac478644604177d0bcbf9d.bindPopup(popup_18c19d6f7531f32d52da9d9d30ddde00)
+        ;
+
+        
+    
+    
+            var circle_marker_03319c4ac3b40172151c79b33cd0acea = L.circleMarker(
+                [36.204824, 138.252924],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_d10aa15502c9eb325c19034d0797822f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44323f04691f5b62e65d3cd0858fd823 = $(`<div id="html_44323f04691f5b62e65d3cd0858fd823" style="width: 100.0%; height: 100.0%;">Country : Japan<br><br>                     Nettowert : 57286.24 EUR<br></div>`)[0];
+            popup_d10aa15502c9eb325c19034d0797822f.setContent(html_44323f04691f5b62e65d3cd0858fd823);
+        
+
+        circle_marker_03319c4ac3b40172151c79b33cd0acea.bindPopup(popup_d10aa15502c9eb325c19034d0797822f)
+        ;
+
+        
+    
+    
+            var circle_marker_cdad7d10b051409e659ef82fa4aa841b = L.circleMarker(
+                [33.854721, 35.862285],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_6505aefa9f79b5e36ce4f0dab51f499a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75f4053d1fc1b0a20a46d53e7deba486 = $(`<div id="html_75f4053d1fc1b0a20a46d53e7deba486" style="width: 100.0%; height: 100.0%;">Country : Lebanon<br><br>                     Nettowert : 51066.92 EUR<br></div>`)[0];
+            popup_6505aefa9f79b5e36ce4f0dab51f499a.setContent(html_75f4053d1fc1b0a20a46d53e7deba486);
+        
+
+        circle_marker_cdad7d10b051409e659ef82fa4aa841b.bindPopup(popup_6505aefa9f79b5e36ce4f0dab51f499a)
+        ;
+
+        
+    
+    
+            var circle_marker_e4c2eac03c3252d9196180e86fd00fe1 = L.circleMarker(
+                [25.354826, 51.183884],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_bf950ac5384d35461f979eaec6fbb7d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba1ea0e558776146f7426a043c7eaa9d = $(`<div id="html_ba1ea0e558776146f7426a043c7eaa9d" style="width: 100.0%; height: 100.0%;">Country : Qatar<br><br>                     Nettowert : 46351.58 EUR<br></div>`)[0];
+            popup_bf950ac5384d35461f979eaec6fbb7d7.setContent(html_ba1ea0e558776146f7426a043c7eaa9d);
+        
+
+        circle_marker_e4c2eac03c3252d9196180e86fd00fe1.bindPopup(popup_bf950ac5384d35461f979eaec6fbb7d7)
+        ;
+
+        
+    
+    
+            var circle_marker_a81c2599170081dad08ca589a42b863b = L.circleMarker(
+                [23.69781, 120.960515],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_a7fa8405a413f012269f9334f84f7c71 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13c76e1edfe845ccdfb42b38ac47ea68 = $(`<div id="html_13c76e1edfe845ccdfb42b38ac47ea68" style="width: 100.0%; height: 100.0%;">Country : Taiwan<br><br>                     Nettowert : 44036.59 EUR<br></div>`)[0];
+            popup_a7fa8405a413f012269f9334f84f7c71.setContent(html_13c76e1edfe845ccdfb42b38ac47ea68);
+        
+
+        circle_marker_a81c2599170081dad08ca589a42b863b.bindPopup(popup_a7fa8405a413f012269f9334f84f7c71)
+        ;
+
+        
+    
+    
+            var circle_marker_769ff5002346cff262f8b7d139dfe16f = L.circleMarker(
+                [-0.789275, 113.921327],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_996e8c43695ed0e7d99feff58dc1a4d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3238f1ad31403265453e3260fe7d033 = $(`<div id="html_d3238f1ad31403265453e3260fe7d033" style="width: 100.0%; height: 100.0%;">Country : Indonesia<br><br>                     Nettowert : 40633.62 EUR<br></div>`)[0];
+            popup_996e8c43695ed0e7d99feff58dc1a4d2.setContent(html_d3238f1ad31403265453e3260fe7d033);
+        
+
+        circle_marker_769ff5002346cff262f8b7d139dfe16f.bindPopup(popup_996e8c43695ed0e7d99feff58dc1a4d2)
+        ;
+
+        
+    
+    
+            var circle_marker_df9db6ff9f58f1fe1dd47c1892298845 = L.circleMarker(
+                [-1.831239, -78.183406],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_18fe3e8402789357ce0f7033751ac150 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82b2615f00cefe03737bf28310f1ed5d = $(`<div id="html_82b2615f00cefe03737bf28310f1ed5d" style="width: 100.0%; height: 100.0%;">Country : Egypt<br><br>                     Nettowert : 35098.670000000006 EUR<br></div>`)[0];
+            popup_18fe3e8402789357ce0f7033751ac150.setContent(html_82b2615f00cefe03737bf28310f1ed5d);
+        
+
+        circle_marker_df9db6ff9f58f1fe1dd47c1892298845.bindPopup(popup_18fe3e8402789357ce0f7033751ac150)
+        ;
+
+        
+    
+    
+            var circle_marker_b4ac014e3a3ae79ef86f4cd7f0d618ce = L.circleMarker(
+                [12.879721, 121.774017],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_91df599a641d1d1bdbb9695e458b355d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e125a9391387d7bd21b292660667de6 = $(`<div id="html_7e125a9391387d7bd21b292660667de6" style="width: 100.0%; height: 100.0%;">Country : Philippines<br><br>                     Nettowert : 32255.62 EUR<br></div>`)[0];
+            popup_91df599a641d1d1bdbb9695e458b355d.setContent(html_7e125a9391387d7bd21b292660667de6);
+        
+
+        circle_marker_b4ac014e3a3ae79ef86f4cd7f0d618ce.bindPopup(popup_91df599a641d1d1bdbb9695e458b355d)
+        ;
+
+        
+    
+    
+            var circle_marker_1703242f39970b4860c39effe9dfef38 = L.circleMarker(
+                [35.126413, 33.429859],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_74de83c29de62040cb632a3b0cb95d68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ba98be5072a7035aece18b55a3c8a00 = $(`<div id="html_5ba98be5072a7035aece18b55a3c8a00" style="width: 100.0%; height: 100.0%;">Country : Cyprus<br><br>                     Nettowert : 31835.3 EUR<br></div>`)[0];
+            popup_74de83c29de62040cb632a3b0cb95d68.setContent(html_5ba98be5072a7035aece18b55a3c8a00);
+        
+
+        circle_marker_1703242f39970b4860c39effe9dfef38.bindPopup(popup_74de83c29de62040cb632a3b0cb95d68)
+        ;
+
+        
+    
+    
+            var circle_marker_7c118fb381d857f8109d77fd07be97db = L.circleMarker(
+                [-14.235004, -51.92528],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_eecc9d30c6a0031b303cb3f2acae4866 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc552f605b2c541ea9bb60d04d38f194 = $(`<div id="html_cc552f605b2c541ea9bb60d04d38f194" style="width: 100.0%; height: 100.0%;">Country : Brazil<br><br>                     Nettowert : 28391.47 EUR<br></div>`)[0];
+            popup_eecc9d30c6a0031b303cb3f2acae4866.setContent(html_cc552f605b2c541ea9bb60d04d38f194);
+        
+
+        circle_marker_7c118fb381d857f8109d77fd07be97db.bindPopup(popup_eecc9d30c6a0031b303cb3f2acae4866)
+        ;
+
+        
+    
+    
+            var circle_marker_d99f1f3da97c5c51ec705d03b47d307e = L.circleMarker(
+                [48.379433, 31.16558],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_814f60fc9cebbd69d84b32874f060b1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e7f410dcc0f919cb35a487c1250661b = $(`<div id="html_9e7f410dcc0f919cb35a487c1250661b" style="width: 100.0%; height: 100.0%;">Country : Ukraine<br><br>                     Nettowert : 26681.5 EUR<br></div>`)[0];
+            popup_814f60fc9cebbd69d84b32874f060b1d.setContent(html_9e7f410dcc0f919cb35a487c1250661b);
+        
+
+        circle_marker_d99f1f3da97c5c51ec705d03b47d307e.bindPopup(popup_814f60fc9cebbd69d84b32874f060b1d)
+        ;
+
+        
+    
+    
+            var circle_marker_b7156c2d531711fca32798e3b8a1cd01 = L.circleMarker(
+                [35.907757, 127.766922],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_04ab7e8dc76457ab1f24a2677c27dfc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81a0221875e49e942d98814bd72395f8 = $(`<div id="html_81a0221875e49e942d98814bd72395f8" style="width: 100.0%; height: 100.0%;">Country : South Korea<br><br>                     Nettowert : 25211.51 EUR<br></div>`)[0];
+            popup_04ab7e8dc76457ab1f24a2677c27dfc2.setContent(html_81a0221875e49e942d98814bd72395f8);
+        
+
+        circle_marker_b7156c2d531711fca32798e3b8a1cd01.bindPopup(popup_04ab7e8dc76457ab1f24a2677c27dfc2)
+        ;
+
+        
+    
+    
+            var circle_marker_d1a01b7944cc810b3dfecd598c4f178a = L.circleMarker(
+                [32.427908, 53.688046],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_170a02970ddf4989e14a1e6fad27b2db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36a9cdca7010c4ea1457d68ab9ed31f0 = $(`<div id="html_36a9cdca7010c4ea1457d68ab9ed31f0" style="width: 100.0%; height: 100.0%;">Country : Iran<br><br>                     Nettowert : 25141.27 EUR<br></div>`)[0];
+            popup_170a02970ddf4989e14a1e6fad27b2db.setContent(html_36a9cdca7010c4ea1457d68ab9ed31f0);
+        
+
+        circle_marker_d1a01b7944cc810b3dfecd598c4f178a.bindPopup(popup_170a02970ddf4989e14a1e6fad27b2db)
+        ;
+
+        
+    
+    
+            var circle_marker_e87eb46d7ee73847b95272648b4aa1a6 = L.circleMarker(
+                [8.537981, -80.782127],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_9e11d75951b13d9d2da34445df7af7b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e54360b88d638516a44b838676b6d511 = $(`<div id="html_e54360b88d638516a44b838676b6d511" style="width: 100.0%; height: 100.0%;">Country : Panama<br><br>                     Nettowert : 24271.73 EUR<br></div>`)[0];
+            popup_9e11d75951b13d9d2da34445df7af7b3.setContent(html_e54360b88d638516a44b838676b6d511);
+        
+
+        circle_marker_e87eb46d7ee73847b95272648b4aa1a6.bindPopup(popup_9e11d75951b13d9d2da34445df7af7b3)
+        ;
+
+        
+    
+    
+            var circle_marker_3e32f67e5d75727b77b125bf9de93eca = L.circleMarker(
+                [-13.133897, 27.849332],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_def8e28be9997fbc9607143fd88cf5e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a9eed189ffc0dede36ee97aed4208e3 = $(`<div id="html_8a9eed189ffc0dede36ee97aed4208e3" style="width: 100.0%; height: 100.0%;">Country : Zambia<br><br>                     Nettowert : 19144.58 EUR<br></div>`)[0];
+            popup_def8e28be9997fbc9607143fd88cf5e2.setContent(html_8a9eed189ffc0dede36ee97aed4208e3);
+        
+
+        circle_marker_3e32f67e5d75727b77b125bf9de93eca.bindPopup(popup_def8e28be9997fbc9607143fd88cf5e2)
+        ;
+
+        
+    
+    
+            var circle_marker_9cec514c1400017e890d7381c599667a = L.circleMarker(
+                [10.691803, -61.222503],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_51005faf7c2344f73248e9f8d3add7b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_807cc63cfd79612ee80ba52013ed8d51 = $(`<div id="html_807cc63cfd79612ee80ba52013ed8d51" style="width: 100.0%; height: 100.0%;">Country : Trinidad and Tobago<br><br>                     Nettowert : 14832.04 EUR<br></div>`)[0];
+            popup_51005faf7c2344f73248e9f8d3add7b1.setContent(html_807cc63cfd79612ee80ba52013ed8d51);
+        
+
+        circle_marker_9cec514c1400017e890d7381c599667a.bindPopup(popup_51005faf7c2344f73248e9f8d3add7b1)
+        ;
+
+        
+    
+    
+            var circle_marker_fc28a8e1f561f55db1c010513cd31151 = L.circleMarker(
+                [30.585164, 36.238414],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_c16f886da5d33e427694138e48d1a145 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13a5f42a83ce376eafdf7fb355232150 = $(`<div id="html_13a5f42a83ce376eafdf7fb355232150" style="width: 100.0%; height: 100.0%;">Country : Jordan<br><br>                     Nettowert : 14431.84 EUR<br></div>`)[0];
+            popup_c16f886da5d33e427694138e48d1a145.setContent(html_13a5f42a83ce376eafdf7fb355232150);
+        
+
+        circle_marker_fc28a8e1f561f55db1c010513cd31151.bindPopup(popup_c16f886da5d33e427694138e48d1a145)
+        ;
+
+        
+    
+    
+            var circle_marker_0e765c45340225ae12899b36758c6b04 = L.circleMarker(
+                [15.199999, -86.241905],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_201edd8f257a0c21f8e494e415b4bbed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_daff3b6c5d23c192165b1a7a3989abfe = $(`<div id="html_daff3b6c5d23c192165b1a7a3989abfe" style="width: 100.0%; height: 100.0%;">Country : Honduras<br><br>                     Nettowert : 13513.6 EUR<br></div>`)[0];
+            popup_201edd8f257a0c21f8e494e415b4bbed.setContent(html_daff3b6c5d23c192165b1a7a3989abfe);
+        
+
+        circle_marker_0e765c45340225ae12899b36758c6b04.bindPopup(popup_201edd8f257a0c21f8e494e415b4bbed)
+        ;
+
+        
+    
+    
+            var circle_marker_bf1d1f3e074f12e6c78fac8d09dcf59c = L.circleMarker(
+                [30.375321, 69.345116],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_d6e40cf9833de5751d1fc92cd086ed6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf7acbf685048b889c278704b0d7e357 = $(`<div id="html_cf7acbf685048b889c278704b0d7e357" style="width: 100.0%; height: 100.0%;">Country : Pakistan<br><br>                     Nettowert : 11814.92 EUR<br></div>`)[0];
+            popup_d6e40cf9833de5751d1fc92cd086ed6d.setContent(html_cf7acbf685048b889c278704b0d7e357);
+        
+
+        circle_marker_bf1d1f3e074f12e6c78fac8d09dcf59c.bindPopup(popup_d6e40cf9833de5751d1fc92cd086ed6d)
+        ;
+
+        
+    
+    
+            var circle_marker_3e0ca8fdf8c301d6b0a26a1d742a69c4 = L.circleMarker(
+                [56.879635, 24.603189],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_3ef618bd43b5caaef0096d6407973a1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09eb90fb52b911ca3816f6edeeedda29 = $(`<div id="html_09eb90fb52b911ca3816f6edeeedda29" style="width: 100.0%; height: 100.0%;">Country : Latvia<br><br>                     Nettowert : 11488.56 EUR<br></div>`)[0];
+            popup_3ef618bd43b5caaef0096d6407973a1c.setContent(html_09eb90fb52b911ca3816f6edeeedda29);
+        
+
+        circle_marker_3e0ca8fdf8c301d6b0a26a1d742a69c4.bindPopup(popup_3ef618bd43b5caaef0096d6407973a1c)
+        ;
+
+        
+    
+    
+            var circle_marker_e59cd8294455000a247f540be26e48e4 = L.circleMarker(
+                [58.595272, 25.013607],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_6f1d125870cccbac6e79f926967868dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f997bf30cc075bc511b53952a6b09311 = $(`<div id="html_f997bf30cc075bc511b53952a6b09311" style="width: 100.0%; height: 100.0%;">Country : Estonia<br><br>                     Nettowert : 10842.619999999999 EUR<br></div>`)[0];
+            popup_6f1d125870cccbac6e79f926967868dc.setContent(html_f997bf30cc075bc511b53952a6b09311);
+        
+
+        circle_marker_e59cd8294455000a247f540be26e48e4.bindPopup(popup_6f1d125870cccbac6e79f926967868dc)
+        ;
+
+        
+    
+    
+            var circle_marker_d3888cf0e61e059816e65ae6648e28c8 = L.circleMarker(
+                [-38.416097, -63.616672],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_6e5f1d1c7814fde9b5e889d7729bca14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbbed3d5ec100c6f332a103b3e541edb = $(`<div id="html_fbbed3d5ec100c6f332a103b3e541edb" style="width: 100.0%; height: 100.0%;">Country : Argentina<br><br>                     Nettowert : 10534.85 EUR<br></div>`)[0];
+            popup_6e5f1d1c7814fde9b5e889d7729bca14.setContent(html_fbbed3d5ec100c6f332a103b3e541edb);
+        
+
+        circle_marker_d3888cf0e61e059816e65ae6648e28c8.bindPopup(popup_6e5f1d1c7814fde9b5e889d7729bca14)
+        ;
+
+        
+    
+    
+            var circle_marker_46971b5c9671b2f48d0f912a443511db = L.circleMarker(
+                [49.815273, 6.129583],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_26058323313cf84669847b00bb774208 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2f80c1b983c27059da00c2f3ac7770c = $(`<div id="html_e2f80c1b983c27059da00c2f3ac7770c" style="width: 100.0%; height: 100.0%;">Country : Luxembourg<br><br>                     Nettowert : 9465.89 EUR<br></div>`)[0];
+            popup_26058323313cf84669847b00bb774208.setContent(html_e2f80c1b983c27059da00c2f3ac7770c);
+        
+
+        circle_marker_46971b5c9671b2f48d0f912a443511db.bindPopup(popup_26058323313cf84669847b00bb774208)
+        ;
+
+        
+    
+    
+            var circle_marker_78674accb74aa84f5140908bee5a3ab3 = L.circleMarker(
+                [47.411631, 28.369885],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_3f08b4a7cecdc10b1175f960a16cf673 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e8e2817b5c889180bdd46e399609797 = $(`<div id="html_2e8e2817b5c889180bdd46e399609797" style="width: 100.0%; height: 100.0%;">Country : Moldova<br><br>                     Nettowert : 8414.63 EUR<br></div>`)[0];
+            popup_3f08b4a7cecdc10b1175f960a16cf673.setContent(html_2e8e2817b5c889180bdd46e399609797);
+        
+
+        circle_marker_78674accb74aa84f5140908bee5a3ab3.bindPopup(popup_3f08b4a7cecdc10b1175f960a16cf673)
+        ;
+
+        
+    
+    
+            var circle_marker_364352d08dcb30cecb8f56315776945c = L.circleMarker(
+                [9.081999, 8.675277],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_761573fd6562b546a3042528518d4f6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bd834e445959084459d90f17993323d = $(`<div id="html_7bd834e445959084459d90f17993323d" style="width: 100.0%; height: 100.0%;">Country : Nigeria<br><br>                     Nettowert : 7539.72 EUR<br></div>`)[0];
+            popup_761573fd6562b546a3042528518d4f6c.setContent(html_7bd834e445959084459d90f17993323d);
+        
+
+        circle_marker_364352d08dcb30cecb8f56315776945c.bindPopup(popup_761573fd6562b546a3042528518d4f6c)
+        ;
+
+        
+    
+    
+            var circle_marker_9e9eec1b9df120e6388b1469c6731cfb = L.circleMarker(
+                [14.058324, 108.277199],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_6e3f6a59f3a55e10aef9beb06a6e8fb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_282055828a3ba7d98c7668bd089bce2f = $(`<div id="html_282055828a3ba7d98c7668bd089bce2f" style="width: 100.0%; height: 100.0%;">Country : Vietnam<br><br>                     Nettowert : 7354.43 EUR<br></div>`)[0];
+            popup_6e3f6a59f3a55e10aef9beb06a6e8fb7.setContent(html_282055828a3ba7d98c7668bd089bce2f);
+        
+
+        circle_marker_9e9eec1b9df120e6388b1469c6731cfb.bindPopup(popup_6e3f6a59f3a55e10aef9beb06a6e8fb7)
+        ;
+
+        
+    
+    
+            var circle_marker_ca6d5e99865b37cc9f6fb1b386a5b710 = L.circleMarker(
+                [-11.202692, 17.873887],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_7faa546cf7d348979a20a0877d8f23dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86e04d37e12efdbfa6c0e68eaaefbc34 = $(`<div id="html_86e04d37e12efdbfa6c0e68eaaefbc34" style="width: 100.0%; height: 100.0%;">Country : Angola<br><br>                     Nettowert : 7093.55 EUR<br></div>`)[0];
+            popup_7faa546cf7d348979a20a0877d8f23dc.setContent(html_86e04d37e12efdbfa6c0e68eaaefbc34);
+        
+
+        circle_marker_ca6d5e99865b37cc9f6fb1b386a5b710.bindPopup(popup_7faa546cf7d348979a20a0877d8f23dc)
+        ;
+
+        
+    
+    
+            var circle_marker_bc106e82a15ec9578330f3e531a8c835 = L.circleMarker(
+                [31.791702, -7.09262],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_3ae9e3fdeb64e79e967c6fdb3e50981b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8aadbe10a1c624a445b76415cf2baaff = $(`<div id="html_8aadbe10a1c624a445b76415cf2baaff" style="width: 100.0%; height: 100.0%;">Country : Morocco<br><br>                     Nettowert : 6515.49 EUR<br></div>`)[0];
+            popup_3ae9e3fdeb64e79e967c6fdb3e50981b.setContent(html_8aadbe10a1c624a445b76415cf2baaff);
+        
+
+        circle_marker_bc106e82a15ec9578330f3e531a8c835.bindPopup(popup_3ae9e3fdeb64e79e967c6fdb3e50981b)
+        ;
+
+        
+    
+    
+            var circle_marker_23daef60ca9a4cb8de4a1baeb485777c = L.circleMarker(
+                [29.31166, 47.481766],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_ab38248bda44a7f55aab537bcc32e5cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7b46283d1f24d26a573b026841b123a = $(`<div id="html_b7b46283d1f24d26a573b026841b123a" style="width: 100.0%; height: 100.0%;">Country : Kuwait<br><br>                     Nettowert : 6277.7 EUR<br></div>`)[0];
+            popup_ab38248bda44a7f55aab537bcc32e5cb.setContent(html_b7b46283d1f24d26a573b026841b123a);
+        
+
+        circle_marker_23daef60ca9a4cb8de4a1baeb485777c.bindPopup(popup_ab38248bda44a7f55aab537bcc32e5cb)
+        ;
+
+        
+    
+    
+            var circle_marker_ce58cc269ac5d17436504e152a44eeac = L.circleMarker(
+                [42.315407, 43.356892],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_307cd945492e2c306d87794755f61c61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d78c05a06bd269168ede2fd9cf614a3 = $(`<div id="html_5d78c05a06bd269168ede2fd9cf614a3" style="width: 100.0%; height: 100.0%;">Country : Georgia<br><br>                     Nettowert : 5499.58 EUR<br></div>`)[0];
+            popup_307cd945492e2c306d87794755f61c61.setContent(html_5d78c05a06bd269168ede2fd9cf614a3);
+        
+
+        circle_marker_ce58cc269ac5d17436504e152a44eeac.bindPopup(popup_307cd945492e2c306d87794755f61c61)
+        ;
+
+        
+    
+    
+            var circle_marker_f03dd769d54d8e5c6dcca51ada2deea6 = L.circleMarker(
+                [6.42375, -66.58973],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_96e06d091efa68e6eb3437ea3eb4b7a4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47cec4422dc1d5ff5f5ffba7bd558dc9 = $(`<div id="html_47cec4422dc1d5ff5f5ffba7bd558dc9" style="width: 100.0%; height: 100.0%;">Country : Venezuela<br><br>                     Nettowert : 4831.7 EUR<br></div>`)[0];
+            popup_96e06d091efa68e6eb3437ea3eb4b7a4.setContent(html_47cec4422dc1d5ff5f5ffba7bd558dc9);
+        
+
+        circle_marker_f03dd769d54d8e5c6dcca51ada2deea6.bindPopup(popup_96e06d091efa68e6eb3437ea3eb4b7a4)
+        ;
+
+        
+    
+    
+            var circle_marker_f18a306d8c87b6b0253cc917989cc933 = L.circleMarker(
+                [-23.442503, -58.443832],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_c6526a22d0e44cad57ce99204eccd7b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ac8e0576117b04141ec91e219487dfb = $(`<div id="html_9ac8e0576117b04141ec91e219487dfb" style="width: 100.0%; height: 100.0%;">Country : Paraguay<br><br>                     Nettowert : 4089.13 EUR<br></div>`)[0];
+            popup_c6526a22d0e44cad57ce99204eccd7b6.setContent(html_9ac8e0576117b04141ec91e219487dfb);
+        
+
+        circle_marker_f18a306d8c87b6b0253cc917989cc933.bindPopup(popup_c6526a22d0e44cad57ce99204eccd7b6)
+        ;
+
+        
+    
+    
+            var circle_marker_16091c11a553cac888e908f77188ad44 = L.circleMarker(
+                [-19.015438, 29.154857],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_ed6d4d6075c4a421db5b2edf3e1f8670 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33bce419c1de4e401146ae741970b8e3 = $(`<div id="html_33bce419c1de4e401146ae741970b8e3" style="width: 100.0%; height: 100.0%;">Country : Zimbabwe<br><br>                     Nettowert : 3973.36 EUR<br></div>`)[0];
+            popup_ed6d4d6075c4a421db5b2edf3e1f8670.setContent(html_33bce419c1de4e401146ae741970b8e3);
+        
+
+        circle_marker_16091c11a553cac888e908f77188ad44.bindPopup(popup_ed6d4d6075c4a421db5b2edf3e1f8670)
+        ;
+
+        
+    
+    
+            var circle_marker_e045736745ed848de0d1bc1ec69a6bfb = L.circleMarker(
+                [40.143105, 47.576927],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_0778d7fe5b23c00d7a274b1d5c1d1d6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9346de2760a8ce6ed00af2e6c77f422 = $(`<div id="html_f9346de2760a8ce6ed00af2e6c77f422" style="width: 100.0%; height: 100.0%;">Country : Azerbaijan<br><br>                     Nettowert : 3546.0 EUR<br></div>`)[0];
+            popup_0778d7fe5b23c00d7a274b1d5c1d1d6c.setContent(html_f9346de2760a8ce6ed00af2e6c77f422);
+        
+
+        circle_marker_e045736745ed848de0d1bc1ec69a6bfb.bindPopup(popup_0778d7fe5b23c00d7a274b1d5c1d1d6c)
+        ;
+
+        
+    
+    
+            var circle_marker_52ec1116db5fe46f93dc1a0f9d54cafc = L.circleMarker(
+                [43.915886, 17.679076],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_af9bde75db62f83974378ee3dc4a7fd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f88fbeb16f323f5736eaa96be2d0d8b4 = $(`<div id="html_f88fbeb16f323f5736eaa96be2d0d8b4" style="width: 100.0%; height: 100.0%;">Country : Bosnia and Herz.<br><br>                     Nettowert : 2963.83 EUR<br></div>`)[0];
+            popup_af9bde75db62f83974378ee3dc4a7fd3.setContent(html_f88fbeb16f323f5736eaa96be2d0d8b4);
+        
+
+        circle_marker_52ec1116db5fe46f93dc1a0f9d54cafc.bindPopup(popup_af9bde75db62f83974378ee3dc4a7fd3)
+        ;
+
+        
+    
+    
+            var circle_marker_174cf29eca1b89ee00fb06d8e933bc43 = L.circleMarker(
+                [28.033886, 1.659626],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_9c9cb7ae34f1d825c242faa959909fab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96a47525e14d9ef07889f04863747115 = $(`<div id="html_96a47525e14d9ef07889f04863747115" style="width: 100.0%; height: 100.0%;">Country : Algeria<br><br>                     Nettowert : 2423.3 EUR<br></div>`)[0];
+            popup_9c9cb7ae34f1d825c242faa959909fab.setContent(html_96a47525e14d9ef07889f04863747115);
+        
+
+        circle_marker_174cf29eca1b89ee00fb06d8e933bc43.bindPopup(popup_9c9cb7ae34f1d825c242faa959909fab)
+        ;
+
+        
+    
+    
+            var circle_marker_528ae5c04aa5a7f52b8db75594712902 = L.circleMarker(
+                [-32.522779, -55.765835],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_8c3cb82fde8e7b4a011eb16e3e34d1bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8280a2ffe42f25e81320a2749e61372e = $(`<div id="html_8280a2ffe42f25e81320a2749e61372e" style="width: 100.0%; height: 100.0%;">Country : Uruguay<br><br>                     Nettowert : 2249.59 EUR<br></div>`)[0];
+            popup_8c3cb82fde8e7b4a011eb16e3e34d1bf.setContent(html_8280a2ffe42f25e81320a2749e61372e);
+        
+
+        circle_marker_528ae5c04aa5a7f52b8db75594712902.bindPopup(popup_8c3cb82fde8e7b4a011eb16e3e34d1bf)
+        ;
+
+        
+    
+    
+            var circle_marker_fff29f194face4394b8b6cceb9502c4c = L.circleMarker(
+                [48.019573, 66.923684],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_7dd0e0a4691900a6cf1b33fd2210e187 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_597e4b2a0e7e53add754a1aa6a940d23 = $(`<div id="html_597e4b2a0e7e53add754a1aa6a940d23" style="width: 100.0%; height: 100.0%;">Country : Kazakhstan<br><br>                     Nettowert : 2182.14 EUR<br></div>`)[0];
+            popup_7dd0e0a4691900a6cf1b33fd2210e187.setContent(html_597e4b2a0e7e53add754a1aa6a940d23);
+        
+
+        circle_marker_fff29f194face4394b8b6cceb9502c4c.bindPopup(popup_7dd0e0a4691900a6cf1b33fd2210e187)
+        ;
+
+        
+    
+    
+            var circle_marker_c04d43388b0ebb659b17f9c46af5f547 = L.circleMarker(
+                [4.535277, 114.727669],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_eb07b54c2b0b0a1c6bacfbe5b880209f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe8348efef626e04288f828ee4a5072e = $(`<div id="html_fe8348efef626e04288f828ee4a5072e" style="width: 100.0%; height: 100.0%;">Country : Brunei<br><br>                     Nettowert : 2035.8999999999999 EUR<br></div>`)[0];
+            popup_eb07b54c2b0b0a1c6bacfbe5b880209f.setContent(html_fe8348efef626e04288f828ee4a5072e);
+        
+
+        circle_marker_c04d43388b0ebb659b17f9c46af5f547.bindPopup(popup_eb07b54c2b0b0a1c6bacfbe5b880209f)
+        ;
+
+        
+    
+    
+            var circle_marker_3576dce1341b22e2f15d9b05f56a9336 = L.circleMarker(
+                [33.223191, 43.679291],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_a608d028b7a51d6f0be4955b7acb7295 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8e6c89b0210046b971c5fb82c0c1fca = $(`<div id="html_c8e6c89b0210046b971c5fb82c0c1fca" style="width: 100.0%; height: 100.0%;">Country : Iraq<br><br>                     Nettowert : 1250.0 EUR<br></div>`)[0];
+            popup_a608d028b7a51d6f0be4955b7acb7295.setContent(html_c8e6c89b0210046b971c5fb82c0c1fca);
+        
+
+        circle_marker_3576dce1341b22e2f15d9b05f56a9336.bindPopup(popup_a608d028b7a51d6f0be4955b7acb7295)
+        ;
+
+        
+    
+    
+            var circle_marker_7e19eabf0d32d1eb2f51184e7a169fd2 = L.circleMarker(
+                [64.963051, -19.020835],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_948b995eb7bc825d4b61a096ccbc1510 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17b03aab11f899f66a5f16fc95b5b06d = $(`<div id="html_17b03aab11f899f66a5f16fc95b5b06d" style="width: 100.0%; height: 100.0%;">Country : Iceland<br><br>                     Nettowert : 1163.46 EUR<br></div>`)[0];
+            popup_948b995eb7bc825d4b61a096ccbc1510.setContent(html_17b03aab11f899f66a5f16fc95b5b06d);
+        
+
+        circle_marker_7e19eabf0d32d1eb2f51184e7a169fd2.bindPopup(popup_948b995eb7bc825d4b61a096ccbc1510)
+        ;
+
+        
+    
+    
+            var circle_marker_e670228f4b980aa952f4c0fd76b8c6a5 = L.circleMarker(
+                [9.748917, -83.753428],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_d08337bb1a0a8e3f387559c018c36f9f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6482711c233e3851612133de17ceb6a3 = $(`<div id="html_6482711c233e3851612133de17ceb6a3" style="width: 100.0%; height: 100.0%;">Country : Costa Rica<br><br>                     Nettowert : 885.4200000000001 EUR<br></div>`)[0];
+            popup_d08337bb1a0a8e3f387559c018c36f9f.setContent(html_6482711c233e3851612133de17ceb6a3);
+        
+
+        circle_marker_e670228f4b980aa952f4c0fd76b8c6a5.bindPopup(popup_d08337bb1a0a8e3f387559c018c36f9f)
+        ;
+
+        
+    
+    
+            var circle_marker_b127a0ca782cbc41d087f8111dbeebd3 = L.circleMarker(
+                [21.512583, 55.923255],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_10b39789df018e933b29f2e96820b904 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_811e946c72c3b1289aea7450502b4125 = $(`<div id="html_811e946c72c3b1289aea7450502b4125" style="width: 100.0%; height: 100.0%;">Country : Oman<br><br>                     Nettowert : 885.24 EUR<br></div>`)[0];
+            popup_10b39789df018e933b29f2e96820b904.setContent(html_811e946c72c3b1289aea7450502b4125);
+        
+
+        circle_marker_b127a0ca782cbc41d087f8111dbeebd3.bindPopup(popup_10b39789df018e933b29f2e96820b904)
+        ;
+
+        
+    
+    
+            var circle_marker_87285c9b6febc1effa61f080b2e3ebfb = L.circleMarker(
+                [-18.665695, 35.529562],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_b30a9a1794645e0531abbcdd4b7db353 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64231883fcfd1f36032d4cc9ecf7c70a = $(`<div id="html_64231883fcfd1f36032d4cc9ecf7c70a" style="width: 100.0%; height: 100.0%;">Country : Mozambique<br><br>                     Nettowert : 817.88 EUR<br></div>`)[0];
+            popup_b30a9a1794645e0531abbcdd4b7db353.setContent(html_64231883fcfd1f36032d4cc9ecf7c70a);
+        
+
+        circle_marker_87285c9b6febc1effa61f080b2e3ebfb.bindPopup(popup_b30a9a1794645e0531abbcdd4b7db353)
+        ;
+
+        
+    
+    
+            var circle_marker_88d18449acf2609db47fa90b30c0372d = L.circleMarker(
+                [-16.290154, -63.588653],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_b30c70dc858474e0ae3c656c64f4f39b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebe42d7da9199136fa03193ec828e904 = $(`<div id="html_ebe42d7da9199136fa03193ec828e904" style="width: 100.0%; height: 100.0%;">Country : Bolivia<br><br>                     Nettowert : 622.86 EUR<br></div>`)[0];
+            popup_b30c70dc858474e0ae3c656c64f4f39b.setContent(html_ebe42d7da9199136fa03193ec828e904);
+        
+
+        circle_marker_88d18449acf2609db47fa90b30c0372d.bindPopup(popup_b30c70dc858474e0ae3c656c64f4f39b)
+        ;
+
+        
+    
+    
+            var circle_marker_da819c93b40515819923e12857c8b797 = L.circleMarker(
+                [-0.023559, 37.906193],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_169dc3f577b0504be1e7475897533195 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79528e17e5e9fc76b707b7c2e86ee38a = $(`<div id="html_79528e17e5e9fc76b707b7c2e86ee38a" style="width: 100.0%; height: 100.0%;">Country : Kenya<br><br>                     Nettowert : 581.47 EUR<br></div>`)[0];
+            popup_169dc3f577b0504be1e7475897533195.setContent(html_79528e17e5e9fc76b707b7c2e86ee38a);
+        
+
+        circle_marker_da819c93b40515819923e12857c8b797.bindPopup(popup_169dc3f577b0504be1e7475897533195)
+        ;
+
+        
+    
+    
+            var circle_marker_6243ffe61cddfd78d2173009ee4c5a36 = L.circleMarker(
+                [15.552727, 48.516388],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_41e840ef7ff4ce0e1ca18743a2de43b3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15029063ed5ce480c685c5a6cb487f82 = $(`<div id="html_15029063ed5ce480c685c5a6cb487f82" style="width: 100.0%; height: 100.0%;">Country : Yemen<br><br>                     Nettowert : 497.7 EUR<br></div>`)[0];
+            popup_41e840ef7ff4ce0e1ca18743a2de43b3.setContent(html_15029063ed5ce480c685c5a6cb487f82);
+        
+
+        circle_marker_6243ffe61cddfd78d2173009ee4c5a36.bindPopup(popup_41e840ef7ff4ce0e1ca18743a2de43b3)
+        ;
+
+        
+    
+    
+            var circle_marker_bb67cf081e607cdd24c5d5e33d5408a4 = L.circleMarker(
+                [4.860416, -58.93018],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_19b0af044e08a189c533194ef7a06a40 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_205f6532d2edf4c829c83567c7e25ba2 = $(`<div id="html_205f6532d2edf4c829c83567c7e25ba2" style="width: 100.0%; height: 100.0%;">Country : Guyana<br><br>                     Nettowert : 451.4 EUR<br></div>`)[0];
+            popup_19b0af044e08a189c533194ef7a06a40.setContent(html_205f6532d2edf4c829c83567c7e25ba2);
+        
+
+        circle_marker_bb67cf081e607cdd24c5d5e33d5408a4.bindPopup(popup_19b0af044e08a189c533194ef7a06a40)
+        ;
+
+        
+    
+    
+            var circle_marker_f408cca17e23a0c1d762935c5f43cb3c = L.circleMarker(
+                [-1.940278, 29.873888],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_ca0952a6950aefcd2fbc61a48f104f23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ee9554cd9a85241ada4fb331186347b = $(`<div id="html_3ee9554cd9a85241ada4fb331186347b" style="width: 100.0%; height: 100.0%;">Country : Rwanda<br><br>                     Nettowert : 332.9 EUR<br></div>`)[0];
+            popup_ca0952a6950aefcd2fbc61a48f104f23.setContent(html_3ee9554cd9a85241ada4fb331186347b);
+        
+
+        circle_marker_f408cca17e23a0c1d762935c5f43cb3c.bindPopup(popup_ca0952a6950aefcd2fbc61a48f104f23)
+        ;
+
+        
+    
+    
+            var circle_marker_c9de107a064084e646a1ed1b07617d08 = L.circleMarker(
+                [33.886917, 9.537499],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_40719e5fd86c88f2091f91c523c29a5d);
+        
+    
+        var popup_d90f7aafcb8d2536ac824bc0ea68cfa9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e53a3f72b1d556dca3eb64f20cb46edd = $(`<div id="html_e53a3f72b1d556dca3eb64f20cb46edd" style="width: 100.0%; height: 100.0%;">Country : Tunisia<br><br>                     Nettowert : 256.2 EUR<br></div>`)[0];
+            popup_d90f7aafcb8d2536ac824bc0ea68cfa9.setContent(html_e53a3f72b1d556dca3eb64f20cb46edd);
+        
+
+        circle_marker_c9de107a064084e646a1ed1b07617d08.bindPopup(popup_d90f7aafcb8d2536ac824bc0ea68cfa9)
+        ;
+
+        
+    
+</script>
